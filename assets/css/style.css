@@ -105,21 +105,6 @@ header .nav ul li a span {
 }
 /* ABOUT STYLES END */ 
 
-.section-title-container {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-}
-
-.section-title {
-    color: whitesmoke;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 6.0vw;
-    font-style: italic;
-    margin: 0 auto 20px auto;
-    
-}
 
 
 
@@ -138,10 +123,26 @@ header .nav ul li a span {
 .project-container {
     display: flex;
     flex-wrap: wrap;
-    background-color: violet;
     height: auto;
     width: auto;
 }
+
+.top-project-container {
+    width: auto;
+    height: auto;
+}
+
+.bottom-project-container {
+    width: auto;
+    height: auto;
+}
+
+.project-2 {
+    width: auto;
+    height: auto;
+}
+
+
 /* PORTFOLIO STYLES END */ 
 
 
@@ -166,12 +167,94 @@ header .nav ul li a span {
 
 
 /* CONTACT STYLES END */ 
+.contact {
+    background-color: thistle;
+}
 
+.contact-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: auto;
+    justify-content: space-around;
+}
 
+.contact-info {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: tomato;
+    width: auto;
+}
 
+.contact-info > * {
+    flex: 1;
+    margin: 15px;
+}
+
+.contact-form {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: blueviolet;
+    width: auto;
+}
+
+.contact-form > * {
+    flex: 1;
+    margin: 15px;
+}
 
 /* FOOTER STYLES START */ 
+
+.footer {
+    margin: 0;
+    background-color: yellowgreen;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    z-index: 10;
+}
+
+.footer div h4 {
+    color: black;
+    font-size: 2.00vw;
+}
+
+.footer div p {
+    color: whitesmoke;
+    font-size: 1.55vw;
+}
 
 
 /* FOOTER STYLES END */ 
 
+
+.section-title-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.section-title {
+    color: whitesmoke;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 6.0vw;
+    font-style: italic;
+    margin: 0 auto 20px auto;
+    
+}
+
+
+/* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
+@media screen and (max-width: 980px) {
+
+}
+
+/* MEDIA QUERY FOR TABLETS AND SMALLER */
+@media screen and (max-width: 768px) {
+
+}
+
+/* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
+@media screen and (max-width: 575px) {
+}

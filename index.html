@@ -34,7 +34,6 @@
 
     <!-- about section -->
     <section class="about" id="about">
-        
         <article class="about-card">
             <img src="./assets/images/profile-pic-circle.png" class="profile-pic-circle" alt="Danny Urkov smiling at the camera with mountain landscape in the background."/>
             <div>
@@ -48,26 +47,33 @@
 
     <!-- portfolio section -->
     <section class="portfolio" id="portfolio">
-        <div class="section-title-container">
+        
+        <article class="section-title-container-left">
             <h2 class="section-title">Portfolio</h2>
-        </div>
-        <div class="project-container">
+        </article>
+        
+        <article class="project-container">
             <div class="top-project-container">
                 <div class="project-1">
-                    <img src="#" />
+                    <a href="https://danster4.github.io/run-buddy/"><img src="./assets/images/run-buddy-screenshot.PNG"></a>
                 </div>
             </div>
             <div class="bottom-project-container">
                 <div class="project-2">
+                    <a href="https://danster4.github.io/c-1-horiseon/"><img src="./assets/images/horiseon-screenshot.PNG"></a>
                 </div>
-                <div class="project-3">
+                <div class="project-2">
+                    <a href="https://danster4.github.io/c-1-horiseon/"><img src="./assets/images/horiseon-screenshot.PNG"></a>
                 </div>
-                <div class="project-4">
+                <div class="project-2">
+                    <a href="https://danster4.github.io/c-1-horiseon/"><img src="./assets/images/horiseon-screenshot.PNG"></a>
                 </div>
-                <div class="project-5">
-                </div>
+                <div class="project-2">
+                    <a href="https://danster4.github.io/c-1-horiseon/"><img src="./assets/images/horiseon-screenshot.PNG"></a>
+                </div>    
             </div>
-        </div>
+        </article>
+
     </section>
 
 
@@ -77,11 +83,37 @@
 
     <!--contact section -->
     <section class="contact" id="contact">
-        <div class="flex-row">
-            <h2 class="section-title">
-                Contact
-            </h2>
-        <div>
+        <div class="section-title-container">
+            <h2 class="section-title">Contact</h2>
+        </div>
+        <div class="contact-container">
+            <div class="contact-info">
+                <h3>Contact Info</h3>
+                <p>
+                    Phone: (312) 391-7134<br/>
+                    Email: <a href="mailto:danielmedfordurkov@gmail.com">danielmedfordurkov@gmail.com</a>
+            
+                </p>
+            </div>
+            <div class="contact-form">
+                <h3>Contact Me</h3>
+                <form>
+                    <label for="contact-name">Name:</label>
+                    <input type="text" id="contact-name" placeholder="Name" />
+                    
+                    <label for="contact-phone">Phone Number:</label>
+                    <input type="tel" id="contact-phone" placeholder="Phone Number" />
+
+                    <label for="contact-email">Email Address:</label>
+                    <input type="email" id="contact-email" placeholder="Email Address" />
+                   
+                    <label for="contact-message">Message:</label>
+                    <textarea id="contact-message" placeholder="Message"></textarea>
+
+                    <button type="submit">Submit</button>
+            </div>
+        </div>
+
     </section>
 
     <!-- footer section -->
