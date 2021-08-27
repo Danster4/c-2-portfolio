@@ -124,17 +124,43 @@ header .nav ul li a span {
     display: flex;
     flex-wrap: wrap;
     height: auto;
-    width: auto;
+    width: 70%;
+    margin: 0 auto;
 }
 
 .top-project-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: auto;
+    height: auto;
+    flex: 1;
+}
+
+.top-project-container div a img {
     width: auto;
     height: auto;
 }
 
 .bottom-project-container {
+    display: flex;
+    flex-wrap: wrap;
     width: auto;
     height: auto;
+    flex: 1;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.top-project-container div a img{
+    width: 1000px;
+    height: 700px;
+    flex-wrap: wrap;
+}
+
+.bottom-project-container div a img{
+    width: 500px;
+    height: 350px;
+    flex-wrap: wrap;
 }
 
 .project-2 {
@@ -153,6 +179,15 @@ header .nav ul li a span {
 
 /* RESUME STYLES START */ 
 
+.resume {
+    background-color: darkblue;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.resume-container {
+    width: 70%;
+}
 
 /* RESUME STYLES END */ 
 
@@ -168,13 +203,15 @@ header .nav ul li a span {
 
 /* CONTACT STYLES END */ 
 .contact {
-    background-color: thistle;
+    background-color: darkblue;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .contact-container {
     display: flex;
     flex-wrap: wrap;
-    width: auto;
+    width: 70%;
     justify-content: space-around;
 }
 
@@ -182,9 +219,8 @@ header .nav ul li a span {
     display: flex;
     flex-wrap: wrap;
     background-color: tomato;
-    width: auto;
+    width: 50%;
 }
-
 .contact-info > * {
     flex: 1;
     margin: 15px;
@@ -194,7 +230,7 @@ header .nav ul li a span {
     display: flex;
     flex-wrap: wrap;
     background-color: blueviolet;
-    width: auto;
+    width: 50%;
 }
 
 .contact-form > * {
@@ -228,11 +264,20 @@ header .nav ul li a span {
 /* FOOTER STYLES END */ 
 
 
-.section-title-container {
+.section-title-container-left {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: flex-start;
+    width: 30%;
+}
+
+.section-title-container-right {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-end;
+    width: 30%;
 }
 
 .section-title {
@@ -241,7 +286,6 @@ header .nav ul li a span {
     font-size: 6.0vw;
     font-style: italic;
     margin: 0 auto 20px auto;
-    
 }
 
 
