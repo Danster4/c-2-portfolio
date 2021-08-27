@@ -1,0 +1,98 @@
+:root {
+    --light-blue: #91f9fd;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* HEADER STYLES START */ 
+
+.header {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: var(--light-blue);
+    justify-content: space-around;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    background-size: cover;
+    background-position: fixed;
+    z-index: 9999;
+}
+
+.nav-left ul li {
+    list-style: none;
+    color: black;
+}
+
+.nav-right ul li {
+    list-style: none;
+}
+
+.nav-left ul li a {
+    color: black;
+}
+
+.logo {
+    justify-content: center;
+}
+
+/* HEADER STYLES END */ 
+
+
+
+
+
+/* ABOUT STYLES START */ 
+
+
+/* ABOUT STYLES END */ 
+
+
+
+
+
+
+
+
+/* PORTFOLIO STYLES START */ 
+
+
+/* PORTFOLIO STYLES END */ 
+
+
+
+
+
+
+
+/* RESUME STYLES START */ 
+
+
+/* RESUME STYLES END */ 
+
+
+
+
+
+
+
+
+/* CONTACT STYLES START */ 
+
+
+/* CONTACT STYLES END */ 
+
+
+
+
+/* FOOTER STYLES START */ 
+
+
+/* FOOTER STYLES END */ 
+
+
