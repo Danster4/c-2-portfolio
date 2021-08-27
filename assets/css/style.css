@@ -20,25 +20,30 @@
     position: sticky;
     top: 0;
     background-size: cover;
-    background-position: fixed;
+    background-attachment: fixed;
+    background-position: center;
+    background-image: url(../images/mountains-landscape.jpg);
     z-index: 9999;
 }
 
-.nav-left ul li {
+header .nav ul {
+    display: flex;
+    flex-wrap: wrap;
     list-style: none;
     color: black;
+    justify-content: space-around;
+    align-items: center;
 }
 
-.nav-right ul li {
-    list-style: none;
-}
 
-.nav-left ul li a {
+header .nav ul li a {
     color: black;
+    padding: 5px 10px;
 }
 
-.logo {
-    justify-content: center;
+header .nav ul li a span {
+    font-weight: 900;
+    font-size: xx-large;
 }
 
 /* HEADER STYLES END */ 
@@ -48,6 +53,15 @@
 
 
 /* ABOUT STYLES START */ 
+
+.about {
+    background-size: cover;
+    display: flex;
+    flex-wrap: wrap;
+    background-attachment: fixed;
+    background-position: center;
+}
+
 
 
 /* ABOUT STYLES END */ 
