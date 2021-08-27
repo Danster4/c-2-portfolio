@@ -11,7 +11,7 @@
 
 /* HEADER STYLES START */ 
 
-.header {
+header {
     display: flex;
     flex-wrap: wrap;
     background-color: var(--light-blue);
@@ -24,6 +24,11 @@
     background-position: center;
     background-image: url(../images/mountains-landscape.jpg);
     z-index: 9999;
+    width: auto;
+}
+
+header {
+    position: sticky; top: 0;
 }
 
 header .nav ul {
@@ -35,15 +40,28 @@ header .nav ul {
     align-items: center;
 }
 
+header .nav ul li a:hover {
+    color: chartreuse;
+    border-radius: 15px;
+    text-shadow: none;
+}
+
 
 header .nav ul li a {
+    display: flex;
+    flex-wrap: wrap;
     color: black;
     padding: 5px 10px;
+    font-size: 2.0vw;
+    text-decoration: none;
 }
 
 header .nav ul li a span {
     font-weight: 900;
-    font-size: xx-large;
+    font-size: 4.0vw;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-decoration: none;
+    align-items: center;
 }
 
 /* HEADER STYLES END */ 
@@ -55,18 +73,53 @@ header .nav ul li a span {
 /* ABOUT STYLES START */ 
 
 .about {
-    background-size: cover;
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
     background-attachment: fixed;
     background-position: center;
+    background-image: url(../images/mountains-landscape.jpg);
 }
 
 
+.about-card {
+    z-index: 5;
+}
 
+.about-card p {
+    color: whitesmoke;
+    font-size: 2.0vw;
+    text-align: center;
+    font-family: cursive;
+}
+
+.profile-pic-circle {
+    display: flex;
+    flex-wrap: wrap;
+    height: auto;
+    width: auto;
+    box-shadow: thistle;
+
+}
 /* ABOUT STYLES END */ 
 
+.section-title-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
 
+.section-title {
+    color: whitesmoke;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 6.0vw;
+    font-style: italic;
+    margin: 0 auto 20px auto;
+    
+}
 
 
 
@@ -74,8 +127,21 @@ header .nav ul li a span {
 
 
 /* PORTFOLIO STYLES START */ 
+.portfolio {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    background-color: darkblue;
+}
 
-
+.project-container {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: violet;
+    height: auto;
+    width: auto;
+}
 /* PORTFOLIO STYLES END */ 
 
 
@@ -108,5 +174,4 @@ header .nav ul li a span {
 
 
 /* FOOTER STYLES END */ 
-
 
