@@ -48,10 +48,12 @@ header .nav ul {
     color: black;
     justify-content: space-around;
     align-items: center;
+    margin: 5px 0;
 }
 
 header .nav ul li a:hover {
-    color: chartreuse;
+    color: black;
+    background-color: chartreuse;
     border-radius: 15px;
     text-shadow: none;
 }
@@ -74,6 +76,9 @@ header .nav ul li a span {
     align-items: center;
 }
 
+header .nav ul li a span:hover {
+    border-radius: 0 0 0 0;
+}
 /* HEADER STYLES END */ 
 
 
@@ -114,25 +119,13 @@ header .nav ul li a span {
     color: whitesmoke;
     font-size: 2.00vw;
     text-align: center;
+    line-height: 1.5;
 }
 
 
 
 
 /* ABOUT STYLES END */
-
-
-
-
-
-
-/* PORTFOLIO STYLES START */ 
-.portfolio {
-    display: flex;
-    flex-wrap: wrap;
-    background-color: green;
-    justify-content: space-around;
-}
 
 .section-title {
     display: flex;
@@ -144,14 +137,19 @@ header .nav ul li a span {
     font-style: italic;
     margin: 0 auto 20px auto;
     text-align: center;
+    order: 0;
 }
 
-.portfolio-title {
+
+
+
+/* PORTFOLIO STYLES START */ 
+.portfolio {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: flex-end;
-    width: 30%;
+    background-color: green;
+    justify-content: space-around;
+    width: 100%;
 }
 
 .project-container {
@@ -187,15 +185,38 @@ header .nav ul li a span {
     border-width: 3px;
     border-color: black;
     border-radius: 15px;
+    position: relative;
 }
 
 .project-1:hover {
     opacity: 0.5;
     transition: opacity 0.5s;
+    cursor: pointer;
 }
 
-.project-1-p {
-    z-index: 0
+.project-1 div {
+    position: absolute;
+    bottom: 0;
+    right: 50px;
+    background: black;
+    color: white;
+    margin-bottom: 5px;
+    font-family: sans-serif;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: visibility 0s, opacity 0.5s linear; 
+    transition: visibility 0s, opacity 0.5s linear;
+    list-style: none;
+    text-decoration: none;
+  }
+
+  .project-1 div:hover {
+    width: 150px;
+    padding: 8px 15px;
+    visibility: visible;
+    list-style: none;
+    text-decoration: none;
+
   }
 
 .project-2:hover,
@@ -229,15 +250,25 @@ header .nav ul li a span {
 
 
 /* RESUME STYLES START */ 
-
-.resume {
+.resume-contact-background {
     background-image: url(../images/stars.jpg);
     display: flex;
     flex-wrap: wrap;
     background-size: cover;
-    background-attachment: fixed;
+    background-attachment: scroll;
     background-position: center;
 }
+
+
+.resume {
+    display: flex;
+    flex-wrap: wrap;
+    /*background-image: url(../images/stars.jpg);
+    background-size: cover;
+    background-attachment: scroll;
+    background-position: center; */
+}
+
 
 .resume-container {
     width: 60%;
@@ -263,24 +294,29 @@ header .nav ul li a span {
 
 /* CONTACT STYLES END */ 
 .contact {
-    background-image: url(../images/stars.jpg);
     display: flex;
     flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-around;
+    flex: 1;
+    /*background-image: url(../images/stars.jpg);
     background-size: cover;
-    background-attachment: fixed;
-    background-position: center;
+    background-attachment: scroll;
+    background-position: center; */
 }
 
 .contact-container {
-    display: flex;
-    flex-wrap: wrap;
-    width: 70%;
+    display: inline-flex;
+    flex-wrap: nowrap;
     justify-content: space-around;
+    align-items: baseline;
+    width: 70%;
+    flex: 1;
 }
 
 .contact-info,
 .contact-form {
-    display: block;
+    display: inline-block;
     background-color: whitesmoke;
     width: 50%;
     text-align: left;
@@ -293,8 +329,13 @@ header .nav ul li a span {
     padding: 10px 20px;
 }
 
+.contact-form {
+    order: 3;
+}
+
 .contact-info {
-    margin-bottom: 30px;
+    align-items: baseline;
+    order: 2;
 }
 .contact-info h3,
 .contact-form h3 {
@@ -368,6 +409,7 @@ footer div p {
 
 section {
     padding: 60px;
+    order:
 }
 
 /* FOOTER STYLES END */ 
