@@ -6,7 +6,17 @@
 * {
     margin: 0;
     padding: 0;
+    border: 0;
     box-sizing: border-box;
+}
+
+html, body, div, img {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
 }
 
 /* HEADER STYLES START */ 
@@ -70,9 +80,9 @@ header .nav ul li a span {
 
 
 
-/* ABOUT STYLES START */ 
+/* HERO STYLES START */ 
 
-.about {
+.hero {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -83,28 +93,39 @@ header .nav ul li a span {
     background-image: url(../images/mountains-landscape.jpg);
 }
 
-
-.about-card {
-    z-index: 5;
-}
-
-.about-card p {
-    color: whitesmoke;
-    font-size: 2.0vw;
-    text-align: center;
-    font-family: cursive;
+.hero-card {
+    z-index: 2;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+   
 }
 
 .profile-pic-circle {
+    box-shadow: thistle;
+}
+
+/* HERO STYLES END */ 
+
+/* ABOUT STYLES START */
+
+.about {
+    background-color: darkblue;
     display: flex;
     flex-wrap: wrap;
-    height: auto;
-    width: auto;
-    box-shadow: thistle;
-
+    justify-content: space-around;
 }
-/* ABOUT STYLES END */ 
 
+.about p {
+    color: whitesmoke;
+    font-size: 2.00vw;
+    text-align: center;
+}
+
+
+
+
+/* ABOUT STYLES END */
 
 
 
@@ -115,59 +136,64 @@ header .nav ul li a span {
 .portfolio {
     display: flex;
     flex-wrap: wrap;
+    background-color: green;
     justify-content: space-around;
-    align-items: center;
-    background-color: darkblue;
+}
+
+.section-title {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
 }
 
 .project-container {
     display: flex;
     flex-wrap: wrap;
-    height: auto;
-    width: 70%;
-    margin: 0 auto;
+    margin: 5px;
+    padding: 10px;
+    justify-content: flex-end;
 }
 
 .top-project-container {
     display: flex;
-    flex-wrap: wrap;
-    width: auto;
-    height: auto;
-    flex: 1;
+    flex-wrap: wrap; 
 }
 
-.top-project-container div a img {
-    width: auto;
-    height: auto;
-}
 
 .bottom-project-container {
     display: flex;
     flex-wrap: wrap;
-    width: auto;
-    height: auto;
-    flex: 1;
-    justify-content: space-around;
-    align-items: center;
+    margin: 5px;
+    padding: 10px;
+    justify-content: space-evenly;
+    width: 70%;
 }
 
-.top-project-container div a img{
-    width: 1000px;
-    height: 700px;
-    flex-wrap: wrap;
+.project-1 {
+    height: 300px;
+    width: 450px;
+    box-shadow: 12px 12px 2px 1px rba(0, 0, 255, .2);
 }
 
-.bottom-project-container div a img{
-    width: 500px;
-    height: 350px;
-    flex-wrap: wrap;
+.project-2,
+.project-3,
+.project-4,
+.project-5 {
+    height: 150px;
+    width: 225px;
 }
 
-.project-2 {
-    width: auto;
-    height: auto;
-}
 
+
+
+
+
+
+/* TRIAL PORTFOLIO 2 STARTS */
+
+
+
+/* TRIAL PORTFOLIO 2 ENDS */
 
 /* PORTFOLIO STYLES END */ 
 
@@ -186,13 +212,18 @@ header .nav ul li a span {
 }
 
 .resume-container {
-    width: 70%;
+    width: 60%;
+    color: black;
+    background-color: wheat;
+    text-align: center;
+    box-shadow: 12px 12px 2px 1px;
+    border-style: solid;
+    border-width: 3px;
+    border-color: black;
+    border-radius: 15px; 
 }
 
 /* RESUME STYLES END */ 
-
-
-
 
 
 
@@ -218,48 +249,67 @@ header .nav ul li a span {
 .contact-info {
     display: flex;
     flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     background-color: tomato;
     width: 50%;
+    text-align: left;
+    box-shadow: 12px 12px 2px 1px;
+    border-style: solid;
+    border-width: 3px;
+    border-color: black;
+    border-radius: 15px; 
 }
-.contact-info > * {
-    flex: 1;
-    margin: 15px;
-}
+
 
 .contact-form {
     display: flex;
     flex-wrap: wrap;
-    background-color: blueviolet;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: violet;
     width: 50%;
+    text-align: left;
+    box-shadow: 12px 12px 2px 1px;
+    border-style: solid;
+    border-width: 3px;
+    border-color: black;
+    border-radius: 15px; 
 }
 
-.contact-form > * {
-    flex: 1;
-    margin: 15px;
-}
+
 
 /* FOOTER STYLES START */ 
 
-.footer {
-    margin: 0;
+footer {
     background-color: yellowgreen;
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    justify-content: flex-start;
+    justify-content: flex-end;
     z-index: 10;
+    padding: 40px 30px;
 }
 
-.footer div h4 {
+footer div h4 {
     color: black;
-    font-size: 2.00vw;
+    font-size: 3.00vw;
+    margin: 0;
+    text-align: right;
 }
 
-.footer div p {
-    color: whitesmoke;
+footer div p {
+    color: black;
     font-size: 1.55vw;
+    line-height: 1.7;
+    text-align: right;
 }
 
+section {
+    padding: 60px;
+}
 
 /* FOOTER STYLES END */ 
 
@@ -268,7 +318,7 @@ header .nav ul li a span {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: center;
     width: 30%;
 }
 
@@ -276,7 +326,7 @@ header .nav ul li a span {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: flex-end;
+    justify-content: center;
     width: 30%;
 }
 
@@ -286,6 +336,7 @@ header .nav ul li a span {
     font-size: 6.0vw;
     font-style: italic;
     margin: 0 auto 20px auto;
+    text-align: center;
 }
 
 
