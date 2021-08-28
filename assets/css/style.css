@@ -93,16 +93,10 @@ header .nav ul li a span {
     background-image: url(../images/mountains-landscape.jpg);
 }
 
-.hero-card {
-    z-index: 2;
-    display: flex;
-    flex-wrap: wrap;
-    margin: 0;
-   
-}
-
 .profile-pic-circle {
     box-shadow: thistle;
+    display: block;
+    width: 50%;
 }
 
 /* HERO STYLES END */ 
@@ -143,7 +137,21 @@ header .nav ul li a span {
 .section-title {
     display: flex;
     flex-wrap: wrap;
-    justify-content: flex-start;
+    align-items: center;
+    color: whitesmoke;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 6.0vw;
+    font-style: italic;
+    margin: 0 auto 20px auto;
+    text-align: center;
+}
+
+.portfolio-title {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 30%;
 }
 
 .project-container {
@@ -152,21 +160,23 @@ header .nav ul li a span {
     margin: 5px;
     padding: 10px;
     justify-content: flex-end;
+    width: 70%;
 }
 
 .top-project-container {
     display: flex;
-    flex-wrap: wrap; 
+    width: 100%;
+    justify-content: center;
+    
 }
 
 
 .bottom-project-container {
     display: flex;
-    flex-wrap: wrap;
     margin: 5px;
     padding: 10px;
     justify-content: space-evenly;
-    width: 70%;
+    width: 100%;
 }
 
 .project-1 {
@@ -184,17 +194,6 @@ header .nav ul li a span {
 }
 
 
-
-
-
-
-
-/* TRIAL PORTFOLIO 2 STARTS */
-
-
-
-/* TRIAL PORTFOLIO 2 ENDS */
-
 /* PORTFOLIO STYLES END */ 
 
 
@@ -206,9 +205,12 @@ header .nav ul li a span {
 /* RESUME STYLES START */ 
 
 .resume {
-    background-color: darkblue;
+    background-image: url(../images/stars.jpg);
     display: flex;
     flex-wrap: wrap;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
 }
 
 .resume-container {
@@ -216,11 +218,12 @@ header .nav ul li a span {
     color: black;
     background-color: wheat;
     text-align: center;
-    box-shadow: 12px 12px 2px 1px;
+    box-shadow: 6px 6px 2px 1px;
     border-style: solid;
     border-width: 3px;
     border-color: black;
     border-radius: 15px; 
+    padding: 10px 5px;
 }
 
 /* RESUME STYLES END */ 
@@ -234,9 +237,12 @@ header .nav ul li a span {
 
 /* CONTACT STYLES END */ 
 .contact {
-    background-color: darkblue;
+    background-image: url(../images/stars.jpg);
     display: flex;
     flex-wrap: wrap;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
 }
 
 .contact-container {
@@ -246,40 +252,67 @@ header .nav ul li a span {
     justify-content: space-around;
 }
 
-.contact-info {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background-color: tomato;
-    width: 50%;
-    text-align: left;
-    box-shadow: 12px 12px 2px 1px;
-    border-style: solid;
-    border-width: 3px;
-    border-color: black;
-    border-radius: 15px; 
-}
-
-
+.contact-info,
 .contact-form {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background-color: violet;
+    display: block;
+    background-color: whitesmoke;
     width: 50%;
     text-align: left;
-    box-shadow: 12px 12px 2px 1px;
+    box-shadow: 6px 6px 2px 1px;
     border-style: solid;
     border-width: 3px;
     border-color: black;
     border-radius: 15px; 
+    margin: 0 40px;
+    padding: 10px 20px;
 }
 
+.contact-info {
+    margin-bottom: 30px;
+}
+.contact-info h3,
+.contact-form h3 {
+    text-align: center;
+    font-size: 26px;
+}
 
+.contact-form input,
+.contact-form textarea {
+    border: 1px solid black;
+    font-family: 'Times New Roman', Times, serif;
+    display: block;
+    padding: 7px;
+    font-size: 14px;
+    color: gray;
+    width: 100%;
+    margin-bottom: 15px;
+    margin-top: 5px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.75);
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    background-color: rgba(255, 255, 255, 1);
+    color: black;
+    border: 1px solid black;
+}
+
+.contact-form button {
+    width: 100%;
+    border: none;
+    background: whitesmoke;
+    color: black;
+    text-align: center;
+    padding: 5px 0;
+    font-size: 16px;
+    border-radius: 10px;
+}
+
+.contact-form button:hover {
+    color: whitesmoke;
+    background: darkblue;
+}
 
 /* FOOTER STYLES START */ 
 
@@ -328,21 +361,26 @@ section {
     align-items: center;
     justify-content: center;
     width: 30%;
+    margin-left: 100px;
 }
 
-.section-title {
-    color: whitesmoke;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 6.0vw;
-    font-style: italic;
-    margin: 0 auto 20px auto;
-    text-align: center;
-}
+
 
 
 /* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
 @media screen and (max-width: 980px) {
+    .profile-pic-circle {
+        width: 60%;
+    }
 
+    .section-title-container-right {
+        display: block;
+        
+        align-items: center;
+        justify-content: center;
+        width: 30%;
+        margin-left: 0;
+    }
 }
 
 /* MEDIA QUERY FOR TABLETS AND SMALLER */
@@ -352,4 +390,7 @@ section {
 
 /* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
 @media screen and (max-width: 575px) {
+    .profile-pic-circle {
+        width: 75%;
+    }
 }
