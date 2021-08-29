@@ -185,7 +185,7 @@ header .nav ul li a span:hover {
     border-style: solid;
     border-width: 3px;
     border-color: black;
-    width: 80%;
+    width: 60%;
     
 }
 
@@ -233,6 +233,7 @@ header .nav ul li a span:hover {
     border-color: black;
     width: 60%;
     margin: 20px;
+    flex: 1;
 }
 
 .project-2 {
@@ -291,10 +292,6 @@ header .nav ul li a span:hover {
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    /*background-image: url(../images/stars.jpg);
-    background-size: cover;
-    background-attachment: scroll;
-    background-position: center; */
 }
 
 .resume-container {
@@ -334,7 +331,6 @@ header .nav ul li a span:hover {
 /* CONTACT STYLES START */ 
 
 
-/* CONTACT STYLES END */ 
 .contact {
     display: flex;
     flex-wrap: wrap;
@@ -343,10 +339,6 @@ header .nav ul li a span:hover {
     justify-content: space-around;
     align-items: center;
     flex: 1;
-    /*background-image: url(../images/stars.jpg);
-    background-size: cover;
-    background-attachment: scroll;
-    background-position: center; */
 }
 
 .title-contact {
@@ -437,16 +429,27 @@ header .nav ul li a span:hover {
     background: darkblue;
 }
 
+/* CONTACT STYLES END */ 
+
 /* FOOTER STYLES START */ 
 
 footer {
     background-color: yellowgreen;
     width: 100%;
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     justify-content: flex-end;
+    align-items: center;
     z-index: 10;
     padding: 30px 30px;
+}
+
+footer div {
+    width:50%;
+} 
+
+footer .logo {
+    width: 10%;
 }
 
 footer div h4 {
@@ -465,29 +468,9 @@ footer div p {
 
 section {
     padding: 60px;
-    order:
 }
 
 /* FOOTER STYLES END */ 
-
-/*
-.section-title-container-left {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    width: 30%;
-}
-
-.section-title-container-right {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    width: 30%;
-    margin-left: 100px;
-}
-*/
 
 
 
@@ -557,7 +540,7 @@ section {
         text-align: center;
         line-height: 1.7;
     }
-    
+
     .top-card {
         width: 80%;
     }
