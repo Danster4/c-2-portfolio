@@ -29,4 +29,4 @@ SO THAT I can review samples of their work and assess whether they're a good can
   * THEN I am presented with a responsive layout that adapts to my viewport
 
 ## Screenshot:
-<insert screenshot here>
+[![c-2-portfolio-full-screenshot.png](https://i.postimg.cc/447DDdqB/c-2-portfolio-full-screenshot.png)](https://postimg.cc/4nG2tJJ9)
