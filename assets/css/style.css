@@ -247,7 +247,7 @@ header .nav ul li a span:hover {
     text-align: center;
     font-style: italic;
     margin-top: 0;
-    font-size: 2.00vw;
+    font-size: 1.80vw;
 }
 
 .lower-card:hover {
@@ -274,19 +274,39 @@ header .nav ul li a span:hover {
     background-position: center;
 }
 
+.title-resume {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    color: whitesmoke;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 6.0vw;
+    font-style: italic;
+    margin: 20px auto 50px auto;
+    text-align: center;
+    order: 0;
+}
 
 .resume {
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
     /*background-image: url(../images/stars.jpg);
     background-size: cover;
     background-attachment: scroll;
     background-position: center; */
 }
 
-
 .resume-container {
-    width: 60%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+.resume-content {
+    width: 40%;
     color: black;
     background-color: wheat;
     text-align: center;
@@ -295,7 +315,8 @@ header .nav ul li a span:hover {
     border-width: 3px;
     border-color: black;
     border-radius: 15px; 
-    padding: 10px 5px;
+    padding: 20px;
+    margin: 10px;
 }
 
 /* RESUME STYLES END */ 
@@ -311,6 +332,7 @@ header .nav ul li a span:hover {
 .contact {
     display: flex;
     flex-wrap: wrap;
+    flex-direction: column;
     width: 100%;
     justify-content: space-around;
     flex: 1;
@@ -333,11 +355,11 @@ header .nav ul li a span:hover {
     order: 0;
 }
 .contact-container {
-    display: inline-flex;
-    flex-wrap: nowrap;
+    display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
-    align-items: baseline;
-    width: 100%;
+    align-items: center;
+    width: 40%;
     flex: 1;
 }
 
@@ -441,7 +463,7 @@ section {
 
 /* FOOTER STYLES END */ 
 
-
+/*
 .section-title-container-left {
     display: flex;
     flex-wrap: wrap;
@@ -458,7 +480,7 @@ section {
     width: 30%;
     margin-left: 100px;
 }
-
+*/
 
 
 
@@ -497,13 +519,19 @@ section {
 
 /* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
 @media screen and (max-width: 575px) {
+    header nav {
+        width: 100%;
+        background-color: gold;
+    }
+
+    
     .profile-pic-circle {
-        width: 75%;
+        width: 80%;
     }
 
     .project-1 {
-        height: 300px;
-        width: 400px;
+        height: 200px;
+        width: 300px;
     }
     .bottom-project-container {
         flex-direction: column;
@@ -517,11 +545,26 @@ section {
     .project-2 {
         height: 400px;
         width: 100px;
-        width: 100%
+        width: 100%;
     }
+
     .lower-card-text,
     .top-card-text {
         font-size: 4.0vw;
+    }
+
+    .resume-content {
+        width: 75%;
+        color: black;
+        background-color: wheat;
+        text-align: center;
+        box-shadow: 6px 6px 2px 1px;
+        border-style: solid;
+        border-width: 3px;
+        border-color: black;
+        border-radius: 15px; 
+        padding: 20px;
+        margin: 10px;
     }
 
     .contact-container {
@@ -542,6 +585,20 @@ section {
 
 /* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
 @media screen and (max-width: 400px) {
+    header nav {
+        width: 100%;
+        background-color: gold;
+    }
+
+    header .nav ul a {
+        margin: 5px 0;
+        font-size: 5.00vw;
+    }
+
+    header .nav ul li a span {
+        font: large;
+    }
+
     .about p {
         color: whitesmoke;
         font-size: 3.00vw;
