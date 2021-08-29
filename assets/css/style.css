@@ -101,7 +101,7 @@ header .nav ul li a span:hover {
 .profile-pic-circle {
     box-shadow: thistle;
     display: block;
-    width: 50%;
+    width: 40%;
 }
 
 /* HERO STYLES END */ 
@@ -185,13 +185,12 @@ header .nav ul li a span:hover {
     border-style: solid;
     border-width: 3px;
     border-color: black;
-    width: auto;
+    width: 80%;
     
 }
 
 .project-1 {
-    height: 300px;
-    width: 450px; 
+    width: 100%; 
     margin-bottom: 0;
 }
 
@@ -202,7 +201,7 @@ header .nav ul li a span:hover {
     text-align: center;
     font-style: italic;
     margin-top: 0;
-    font-size: 2.00vw;
+    font-size: 4.00vw;
 }
 
 
@@ -215,12 +214,12 @@ header .nav ul li a span:hover {
 
 .bottom-project-container {
     display: flex;
-    flex: wrap;
-    margin: 5px;
+    flex-wrap: wrap;
+    margin: 20px;
     padding: 30px 10px 10px 10px;
     justify-content: center;
     width: 80%;
-    flex: 1;
+    
 }
 
 .lower-card {
@@ -232,13 +231,12 @@ header .nav ul li a span:hover {
     border-style: solid;
     border-width: 3px;
     border-color: black;
-    width: auto;
-    margin: 0, 20px;
+    width: 60%;
+    margin: 20px;
 }
 
 .project-2 {
-    height: 150px;
-    width: 225px;
+    width: 100%;
 }
 
 .lower-card-text {
@@ -499,30 +497,42 @@ section {
         width: 60%;
     }
 
-    .section-title-container-right {
-        display: block;
-        
-        align-items: center;
-        justify-content: center;
-        width: 30%;
-        margin-left: 0;
+    .top-card {
+        width: 70%;
     }
-}
+
+    .lower-card {
+        width: 40%;
+    }
+
+    
 
 /* MEDIA QUERY FOR TABLETS AND SMALLER */
 @media screen and (max-width: 768px) {
-    .project-1 {
-        height: 200px;
-        width: 300px;
+    
+    .top-card {
+        width: 80%;
     }
     
-    .project-2 {
-        height: 95px;
-        width: 155px;
+    .lower-card {
+        margin: 20px 0;
+        width: 40%;
     }
-    .lower-card-text,
+    .bottom-project-container {
+        margin: 20px 20px;
+        justify-content: space-evenly;
+    }
+
+    .project-2 {
+        width: 100%;
+    }
+
     .top-card-text {
-        font-size: 1.5vw;
+        font-size: 3.00vw;
+    }
+
+    .lower-card-text {
+        font-size: 2.0vw;
     }
 
     .contact-container {
@@ -537,31 +547,48 @@ section {
         background-color: gold;
     }
 
+    header nav ul li a {
+        font-size: xx-large;
+    }
     
+    .about p {
+        color: whitesmoke;
+        font-size: 3.00vw;
+        text-align: center;
+        line-height: 1.7;
+    }
+    
+    .top-card {
+        width: 80%;
+    }
+    
+    .lower-card {
+        width: 60%
+    }
+
     .profile-pic-circle {
         width: 80%;
     }
-    .portfolio {
-        flex-direction: column;
-        align-items: center;
+    
+    
+    .top-project-container {
+    width: 100%;
+    align-items: space-evenly;
     }
+
     .project-1 {
-        height: 200px;
-        width: 300px;
+        width: 100%;
     }
     
     .bottom-project-container {
         flex-direction: column;
         justify-content: space-between;
-        width: 30%;
-        height: 40%;
-        padding: 30px 0px 10px 0px;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        padding: 30px 0px 30px 0px;
     }
 
-    .project-2 {
-        
-        width: 100%;
-    }
 
     
     .top-card-text {
@@ -587,11 +614,18 @@ section {
         margin: 10px;
     }
 
+    .contact {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
     .contact-container {
         flex-direction: column;
         align-items: center;
         justify-content: space-between;
         width: 80%;
+        flex-wrap: nowrap;
     }
 
     .contact-info {
@@ -630,33 +664,43 @@ section {
     .profile-pic-circle {
         width: 75%;
     }
-
-    .project-1 {
-        height: 150px;
-        width: 225px;
+    .portfolio {
+        padding: 0;
+        margin: 0;
     }
+
+    
     .bottom-project-container {
         flex-direction: column;
         justify-content: space-around;
-        padding: 30px 0px 10px 0px;
+        padding: 30px 0px 30px 0px;
+    }
+
+    .top-card {
+        width: 80%;
     }
 
     .lower-card {
-        justify-content: center
+        justify-content: space-between;
     }
 
     .project-2 {
-        height: 400px;
-        width: 100px;
-        width: 100%
+        width: 100%;
     }
     .lower-card-text,
     .top-card-text {
         font-size: 4.0vw;
     }
+    .resume {
+        padding: 0;
+        margin: 0;
+    }
+    .resume-container {
+        width: 100%;
+    }
 
     .contact-container {
-        width: 80%;
+        width: 100%;
     }
 
     .contact-info {
